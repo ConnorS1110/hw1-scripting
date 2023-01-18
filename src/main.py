@@ -1,6 +1,4 @@
 import argparse
-import sys
-import math
 from num import NUM
 from sym import SYM
 
@@ -26,9 +24,7 @@ def eg(key, string, fun):
     egs[key] = fun
     help += f"  -g {key}    {string}"
 
-def shout():
-    # First Test Case
-    # print("Welcome !!")
+def oo():
     pass
 
 
@@ -98,7 +94,7 @@ def numFunc():
     return 11/7 == num.mid() and 0.787 == round(num.div(), ndigits=3)
 
 
-eg("the", "sdfsdf", shout)
+eg("the", "sdfsdf", oo)
 eg("rand","generate, reset, regenerate same", randFunc)
 eg("sym","check syms", symFunc)
 eg("num", "check nums", numFunc)

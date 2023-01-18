@@ -1,8 +1,8 @@
 import argparse
 import sys
 import math
-import num
-import sym
+from num import NUM
+from sym import SYM
 
 ###################################################
 

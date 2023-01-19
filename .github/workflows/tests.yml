@@ -23,9 +23,9 @@ jobs:
           # Run your script file here
           sh -c "python src/main.py"
           # Store the output of the script in a variable
-          variable=$?
+          fails=$?
           # Check if the variable equals 0
-          if [ $variable -eq 0 ]; then
+          if [ $fails -eq 0 ]; then
             echo "Tests passed"
             exit 0
           else

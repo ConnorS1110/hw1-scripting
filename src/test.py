@@ -60,7 +60,6 @@ def numFunc():
 
 def getCliArgs():
     global args
-    fails = 0
     parser = argparse.ArgumentParser(add_help=False)
     parser.add_argument("-d", "--dump", type=bool, default=False, required=False, help="on crash, dump stack")
     parser.add_argument("-g", "--go", type=str, default="data", required=False, help="start-up action")

@@ -7,6 +7,7 @@ the = {}
 # Seed = 937162211
 
 def main(the, funs):
+    fails = 0
     getCliArgs()
     if (test.args.help):
         print(help)

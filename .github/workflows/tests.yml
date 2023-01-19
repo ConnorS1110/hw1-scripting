@@ -26,14 +26,14 @@ jobs:
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
       - name: Run tests
         run: |
-        # Run your script file here
-        sh -c "python src/main.py"
-        # Store the output of the script in a variable
-        variable=$?
-        # Check if the variable equals 0
-        if [ $variable -eq 0 ]; then
-          echo "Tests passed"
-          exit 0
-        else
-          echo "Tests failed"
-          exit 1
+          # Run your script file here
+          sh -c "python src/main.py"
+          # Store the output of the script in a variable
+          variable=$?
+          # Check if the variable equals 0
+          if [ $variable -eq 0 ]; then
+            echo "Tests passed"
+            exit 0
+          else
+            echo "Tests failed"
+            exit 1

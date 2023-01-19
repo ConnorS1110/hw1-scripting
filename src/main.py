@@ -19,6 +19,7 @@ def main(the, funs):
                     print("❌ fail:",what)
                 else: print("✅ pass:",what)
     printCLIvalues()
+    return fails
 
 
 main(the, test.egs)

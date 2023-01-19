@@ -71,7 +71,7 @@ def printCLIvalues():
     cli_args = {}
     cli_args["dump"] = args.dump
     cli_args["go"] = args.go
-    cli_args["help"] = False
+    cli_args["help"] = args.help
     cli_args["seed"] = args.seed
     print(cli_args)
 

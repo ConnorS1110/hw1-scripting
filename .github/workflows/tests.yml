@@ -27,7 +27,7 @@ jobs:
       - name: Run tests
         run: |
         # Run your script file here
-        sh -c "python main.py"
+        sh -c "python src/main.py"
         # Store the output of the script in a variable
         variable=$?
         # Check if the variable equals 0

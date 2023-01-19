@@ -10,7 +10,7 @@ def main(the, funs):
     fails = 0
     getCliArgs()
     if (test.args.help):
-        print(help)
+        print(test.args.help)
     else:
         for what, fun in funs.items():
             if test.args.go == "all" or what == test.args.go:

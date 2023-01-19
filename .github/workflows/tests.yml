@@ -22,12 +22,3 @@ jobs:
         run: |
           # Run your script file here
           sh -c "python src/main.py -g all";
-          # Store the output of the script in a variable
-          fails=$?;
-          # Check if the variable equals 0
-          if [ $fails -eq 0 ]; then
-            echo "Tests passed";
-            exit 0;
-          else
-            echo "Tests failed";
-            exit 1;

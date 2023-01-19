@@ -1,5 +1,5 @@
-import test
-from test import getCliArgs, printCLIvalues
+import testfile as test
+from testfile import getCliArgs, printCLIvalues
 
 the = {}
 

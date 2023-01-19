@@ -27,6 +27,7 @@ To display help, run:
 
 ```
 python src/main -h True
+python src/main -h HELP
 ```
 
 ## Team Members

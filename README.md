@@ -23,12 +23,6 @@ For example, to see the results of all the test cases run:
 python src/main.py -g all
 ```
 
-To display help, run:
-
-```
-python src/main -h True
-python src/main -h HELP
-```
 
 ## Team Members
 

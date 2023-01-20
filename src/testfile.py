@@ -63,7 +63,7 @@ def getCliArgs():
     parser = argparse.ArgumentParser(add_help=False)
     parser.add_argument("-d", "--dump", type=bool, default=False, required=False, help="on crash, dump stack")
     parser.add_argument("-g", "--go", type=str, default="data", required=False, help="start-up action")
-    parser.add_argument("-h", "--help", type=bool, default=False, required=False, help="show help")
+    parser.add_argument("-h", "--help", action='store_true', help="show help")
     parser.add_argument("-s", "--seed", type=int, default=937162211, required=False, help="random number seed")
     args = parser.parse_args()
 

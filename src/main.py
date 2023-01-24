@@ -3,18 +3,25 @@ from testfile import getCliArgs, printCLIvalues
 
 the = {}
 
-# args = None
-# Seed = 937162211
-
-def main(the, funs):
+def main(funs):
+    """
+    Function:
+        main
+    Description:
+        Main function that tests to see if examples pass. If help command is used, the help string is printed and tests are not run
+    Input:
+        funs - Dictionary of callback functions
+    Output:
+        0 - Tests passed
+        1 - 1 or more tests failed
+    """
     fails = 0
     getCliArgs()
     if (test.args.help):
         print(test.help)
     else:
-        for what, fun in funs.items():
+        for what, _ in funs.items():
             if test.args.go == "all" or what == test.args.go:
-                Seed = test.args.seed
                 if funs[what]() == False:
                     fails += 1
                     print("❌ fail:",what)
@@ -24,4 +31,5 @@ def main(the, funs):
     else: return 1
 
 
-main(the, test.egs)
+if __name__ == "__main__":
+    main(the, test.egs)

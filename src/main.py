@@ -1,8 +1,6 @@
 import testfile as test
 from testfile import getCliArgs, printCLIvalues
 
-the = {}
-
 def main(funs):
     """
     Function:
@@ -32,4 +30,4 @@ def main(funs):
 
 
 if __name__ == "__main__":
-    main(the, test.egs)
+    main(test.egs)
